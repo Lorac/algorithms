@@ -3,7 +3,7 @@ typename std::iterator_traits<InputIterator>::value_type
 secondLowest(InputIterator begin, InputIterator end)
 {
     using Type = typename std::iterator_traits<InputIterator>::value_type;
-    const Type maxElement = *std::max_element(begin, end, comp);
+    const Type maxElement = *std::max_element(begin, end);
  
     std::pair<Type, Type> lowest{maxElement, maxElement};
  
